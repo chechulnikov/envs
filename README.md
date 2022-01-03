@@ -10,5 +10,5 @@ nix-env -i \
 	neovim \
 	docker \
 	kubectl \
-	colima \
+	colima
 ```
