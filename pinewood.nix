@@ -8,5 +8,11 @@ p.mkShell {
     p.docker
     p.kubectl
     p.colima
+    p.bat 
+    p.exa 
+    p.tealdeer 
+    p.grex 
+    p.delta 
+    p.bandwhich 
   ];
 }

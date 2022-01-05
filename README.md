@@ -10,5 +10,11 @@ nix-env -i \
 	neovim \
 	docker \
 	kubectl \
-	colima
+	colima \
+	bat \
+	exa \
+	tealdeer \
+	grex \
+	delta \
+	bandwhich \
 ```
