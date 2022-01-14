@@ -1,8 +1,5 @@
-# nix-envs
-My Nix environments for different purposes
+#!/bin/sh
 
-## Main
-```
 nix-env -i \
 	htop \
 	fish \
@@ -17,4 +14,3 @@ nix-env -i \
 	grex \
 	delta \
 	bandwhich \
-```
