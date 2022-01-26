@@ -4,6 +4,7 @@ nix.install:	# installs nix
 nix.install.deps:	# install all the software via nix
 	@ nix-env -i \
 		htop \
+		procs \
 		fish \
 		git \
 		neovim \
@@ -12,8 +13,11 @@ nix.install.deps:	# install all the software via nix
 		colima \
 		bat \
 		exa \
+		fzf \
 		tealdeer \
 		grex \
+		ripgrep \
 		delta \
 		bandwhich \
-		wireguard-tools
+		wireguard-tools \
+		navi 
