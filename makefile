@@ -1,3 +1,4 @@
+include init.makefile
 include nix.makefile
 include docker.makefile
 include dev.go.makefile
@@ -6,12 +7,9 @@ include wg.makefile
 
 .DEFAULT_GOAL = help
 
-help:	# prints this help
+help:		# prints this help
 	@ echo Available targets are:
 	@ grep -h -E "^[^\#].+:\s+\#\s+.+$$" ./*.makefile ./makefile
 
-init: 
-	@ make nix.install nix.install.deps
-	@ fish -c "set -Ux SRC_PATH /Users/$$USER/sources"	# works only with fish
-	@ fish -c "set -Ux WG_CONF_PATH /Users/$$USER/.wg"
-	@ fish -c "set -Ux WG_CONF default"
+myip:		# show external IP
+	@ dig @resolver4.opendns.com myip.opendns.com +short
