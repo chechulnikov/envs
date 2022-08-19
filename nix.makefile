@@ -2,7 +2,7 @@ nix.inst:	# installs nix
 	@ /bin/sh "sh <(curl -L https://nixos.org/nix/install)"
 
 nix.inst.deps:	# install all the software via nix
-	@ nix -i
+	@ nix-emv -i
 		bandwhich \
 		bat \
 		colima \
@@ -25,5 +25,4 @@ nix.inst.deps:	# install all the software via nix
 		tealdeer \
 		wireguard \
 		zellij \
-		dig \
 		httpie
